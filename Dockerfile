@@ -21,6 +21,7 @@ COPY etc /etc
 
 RUN ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/
 RUN ln -s /etc/apache2/mods-available/remoteip.load /etc/apache2/mods-enabled/
+RUN echo "Hello World" > /var/www/html/index.html
 
 EXPOSE 80 443
 
